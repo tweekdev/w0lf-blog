@@ -1,0 +1,28 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+body {
+  background: #141d2b;
+  color: #fff;
+}
+
+p {
+  color: #a4b1cd;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
