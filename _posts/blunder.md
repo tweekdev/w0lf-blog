@@ -94,7 +94,8 @@ Let us create a script to perform the bruteforce. To write this script we need t
 ```python
  #Grabbing the CSRF Token and Cookie
  r = requests.get(f'http://{HOST}/admin/')
- csrf = re.search(r'input type="hidden" id="jstokenCSRF" name="tokenCSRF" value="([a-f0-9]*)"', r.text) #The cookie seemed to be hexadecimal,so we used the [a-f0-9] regex
+ csrf = re.search(r'input type="hidden" id="jstokenCSRF" name="tokenCSRF" value="([a-f0-9]*)"', r.text)
+ #The cookie seemed to be hexadecimal,so we used the [a-f0-9] regex
  csrf = csrf.group(1)
  cookie = r.cookies.get('BLUDIT-KEY')
 

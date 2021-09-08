@@ -1,5 +1,18 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  overflow-wrap: break-word;
+  width: 80%;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  overflow-wrap: break-word;
 }
 
 .markdown p,

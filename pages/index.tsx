@@ -18,9 +18,6 @@ const Index = ({ allPosts }: Props) => {
   return (
     <>
       <Layout>
-        <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
-        </Head>
         <Container>
           <Intro />
           {heroPost && (
