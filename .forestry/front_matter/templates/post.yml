@@ -9,8 +9,7 @@ fields:
   name: difficulty
   label: difficulty
 - name: active
-  type: image_gallery
-  config: {}
+  type: boolean
   label: active
 - type: textarea
   name: excerpt
