@@ -8,6 +8,10 @@ fields:
 - type: text
   name: difficulty
   label: difficulty
+- name: active
+  type: image_gallery
+  config: {}
+  label: active
 - type: textarea
   name: excerpt
   label: excerpt
