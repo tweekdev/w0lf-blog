@@ -1,18 +1,12 @@
 .markdown {
-  overflow-wrap: break-word;
-  width: 80%;
-  overflow-wrap: break-word;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  word-break: normal;
 }
 
 .wrapper {
   padding: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
-  overflow-wrap: break-word;
 }
 
 .markdown p,
@@ -30,6 +24,9 @@
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
+.markdown pre {
+  overflow: scroll;
+}
 .markdown code {
   background: #121927;
   color: #9fef00;
