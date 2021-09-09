@@ -1,19 +1,21 @@
 ---
 title: Blunder Machine HTB
-excerpt: This is a write-up for an easy Linux box on hackthebox.eu named Blunder.
+excerpt:
+  This is a write-up for an easy Linux box on hackthebox.eu named Blunder.
   It is a pretty easy box, on which we have to exploit a Content Management System
   (CMS) to get the base user and then crack some passwords, which we get from the
   files in the web directory then we exploit a CVE to get root. Let’s get going.
-coverImage: "/assets/blog/blunder/blunder.jpg"
+coverImage: '/assets/blog/blunder/blunder.jpg'
 date: 2021-08-16T05:35:07.322Z
 author:
   name: W0lf15
-  picture: "/assets/blog/authors/w0lf15.png"
+  picture: '/assets/blog/authors/w0lf15.png'
 ogImage:
-  url: "/assets/blog/blunder/blunder.jpg"
+  url: '/assets/blog/blunder/blunder.jpg'
 difficulty: easy
-
+active: false
 ---
+
 ## Recon
 
 As usual, we will start with Nmap, as introduced in the previous blog we will use a script to perform the Nmap scan (please keep in mind the IP address might be different for you). The script first gathers the open ports and then run the scripts for version enumeration and default scripts on the ports, this saves a lot of time for us.
