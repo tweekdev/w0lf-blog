@@ -11,6 +11,7 @@ author:
 ogImage:
   url: "/assets/blog/cap/cap.png"
 difficulty: easy
+active: true
 
 ---
 Note: To write public writeups for active machines is against the rules of HTB. Otherwise, I could protect this blog post using the root flag. Also, I couldn’t find a good content locker that allows custom message for WordPress. So, I couldn’t password protect this blog post using other methods like root hash, root-only readable file contents, etc.
