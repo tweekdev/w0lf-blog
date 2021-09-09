@@ -1,15 +1,18 @@
 ---
-title: 'Cap Machine HTB'
-excerpt: 'Cap is an active machine during the time of writing this post. So, unless you are about to die, I suggest not to proceed. The machine is fairly simple with very few steps to get root access.'
-coverImage: '/assets/blog/cap/cap.png'
-date: '2021-08-16T05:35:07.322Z'
+title: Cap Machine HTB
+excerpt: Cap is an active machine during the time of writing this post. So, unless
+  you are about to die, I suggest not to proceed. The machine is fairly simple with
+  very few steps to get root access.
+coverImage: "/assets/blog/cap/cap.png"
+date: 2021-08-16T05:35:07.322Z
 author:
   name: W0lf15
-  picture: '/assets/blog/authors/w0lf15.png'
+  picture: "/assets/blog/authors/w0lf15.png"
 ogImage:
-  url: '/assets/blog/cap/cap.png'
----
+  url: "/assets/blog/cap/cap.png"
+difficulty: easy
 
+---
 Note: To write public writeups for active machines is against the rules of HTB. Otherwise, I could protect this blog post using the root flag. Also, I couldn’t find a good content locker that allows custom message for WordPress. So, I couldn’t password protect this blog post using other methods like root hash, root-only readable file contents, etc.
 
 ```console
