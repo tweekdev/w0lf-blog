@@ -2,40 +2,40 @@
 label: Post
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: difficulty
+  label: difficulty
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: file
+  name: coverImage
+  label: coverImage
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: field_group
+  name: author
+  label: author
+  fields:
   - type: text
-    name: title
-    label: title
-  - type: text
-    name: difficulty
-    label: difficulty
-  - type: textarea
-    name: excerpt
-    label: excerpt
+    name: name
+    label: name
   - type: file
-    name: coverImage
-    label: coverImage
-  - type: datetime
-    name: date
-    label: date
-    default: now
-  - type: field_group
-    name: author
-    label: author
-    fields:
-      - type: text
-        name: name
-        label: name
-      - type: file
-        name: picture
-        label: picture
-  - type: field_group
-    name: ogImage
-    label: ogImage
-    fields:
-      - type: file
-        name: url
-        label: url
+    name: picture
+    label: picture
+- type: field_group
+  name: ogImage
+  label: ogImage
+  fields:
+  - type: file
+    name: url
+    label: url
 pages:
-  - _posts/knife.md
-  - _posts/cap.md
-  - _posts/blunder.md
+- _posts/blunder.md
+- _posts/cap.md
+- _posts/knife.md
