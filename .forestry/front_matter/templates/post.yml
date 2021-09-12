@@ -8,6 +8,11 @@ fields:
 - type: text
   name: difficulty
   label: difficulty
+- name: date
+  type: text
+  config:
+    required: false
+  label: date
 - name: active
   type: boolean
   label: active
@@ -17,10 +22,6 @@ fields:
 - type: file
   name: coverImage
   label: coverImage
-- type: datetime
-  name: date
-  label: date
-  default: now
 - type: field_group
   name: author
   label: author
