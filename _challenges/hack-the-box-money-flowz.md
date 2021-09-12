@@ -1,5 +1,5 @@
 ---
-date: 2021-09-12T13:00:17Z
+date: '"2021-09-12"'
 title: 'Hack the Box: Money Flowz'
 difficulty: easy
 active: true
