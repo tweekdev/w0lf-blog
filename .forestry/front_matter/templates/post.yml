@@ -39,6 +39,7 @@ fields:
     name: url
     label: url
 pages:
+- _challenges/htb-osint-easy-phish.md
 - _posts/blunder.md
 - _posts/cap.md
 - _posts/knife.md
