@@ -1,6 +1,6 @@
 import Author from "./author";
 
-type PostType = {
+type ChallengeType = {
     slug: string;
     title: string;
     date: string;
@@ -15,4 +15,4 @@ type PostType = {
     difficulty: string;
 };
 
-export default PostType;
+export default ChallengeType;

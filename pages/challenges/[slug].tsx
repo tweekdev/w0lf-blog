@@ -5,21 +5,23 @@ import PostBody from "../../components/post-body";
 import Header from "../../components/header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/layout";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
+import { getAllChallenges, getChallengesBySlugs } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import PostType from "../../types/post";
+import ChallengeType from "../../types/challenge";
 import React from "react";
 type Props = {
-    post: PostType;
+    challenge: ChallengeType;
+    morePosts: PostType[];
     preview?: boolean;
 };
 
-const Post = ({ post, preview }: Props) => {
+const Challenge = ({ challenge, morePosts, preview }: Props) => {
     const router = useRouter();
-    if (!router.isFallback && !post?.slug) {
+    if (!router.isFallback && !challenge?.slug) {
         return <ErrorPage statusCode={404} />;
     }
     return (
@@ -33,21 +35,21 @@ const Post = ({ post, preview }: Props) => {
                         <article className="mb-32">
                             <Head>
                                 <title>
-                                    {post.title} | Next.js Blog Example with{" "}
-                                    {CMS_NAME}
+                                    {challenge.title} | Next.js Blog Example
+                                    with {CMS_NAME}
                                 </title>
                                 <meta
                                     property="og:image"
-                                    content={post.ogImage.url}
+                                    content={challenge.ogImage.url}
                                 />
                             </Head>
                             <PostHeader
-                                title={post.title}
-                                coverImage={post.coverImage}
-                                date={post.date}
-                                author={post.author}
+                                title={challenge.title}
+                                coverImage={challenge.coverImage}
+                                date={challenge.date}
+                                author={challenge.author}
                             />
-                            <PostBody content={post.content} />
+                            <PostBody content={challenge.content} />
                         </article>
                     </>
                 )}
@@ -56,7 +58,7 @@ const Post = ({ post, preview }: Props) => {
     );
 };
 
-export default Post;
+export default Challenge;
 
 type Params = {
     params: {
@@ -65,7 +67,7 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-    const post = getPostBySlug(params.slug, [
+    const challenge = getChallengesBySlugs(params.slug, [
         "title",
         "date",
         "slug",
@@ -76,12 +78,12 @@ export async function getStaticProps({ params }: Params) {
         "active",
         "difficulty",
     ]);
-    const content = await markdownToHtml(post.content || "");
+    const content = await markdownToHtml(challenge.content || "");
 
     return {
         props: {
-            post: {
-                ...post,
+            challenge: {
+                ...challenge,
                 content,
             },
         },
@@ -89,14 +91,14 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-    const posts = getAllPosts(["slug"]);
+    const challenges = getAllChallenges(["slug"]);
 
     return {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        paths: posts.map((post) => {
+        paths: challenges.map((challenge) => {
             return {
                 params: {
-                    slug: post.slug,
+                    slug: challenge.slug,
                 },
             };
         }),

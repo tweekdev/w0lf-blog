@@ -11,6 +11,8 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  difficulty: string;
+  active: boolean;
 };
 
 const HeroPost = ({
