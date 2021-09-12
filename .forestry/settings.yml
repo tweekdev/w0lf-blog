@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _challenge
   label: Challenge
-  match: "**/*"
 - type: directory
   path: _posts
   label: Posts
