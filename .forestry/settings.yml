@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _challenge
-  label: Challenge
+- type: directory
+  path: _challenges
+  label: Challenges
+  create: documents
+  match: "*.md"
 - type: directory
   path: _posts
   label: Posts
