@@ -5,7 +5,7 @@ excerpt: Knife is an easy difficulty Linux machine that features an application 
   the foothold on the server. A sudo misconfiguration is then exploited to gain a
   root shell.
 coverImage: "/assets/blog/knife/knife.jpeg"
-date: '"2021-09-12"'
+date: '2021-09-12'
 author:
   name: W0lf15
   picture: "/assets/blog/authors/w0lf15.png"
