@@ -39,6 +39,7 @@ fields:
     name: url
     label: url
 pages:
+- _challenges/hack-the-box-money-flowz.md
 - _challenges/htb-osint-easy-phish.md
 - _posts/blunder.md
 - _posts/cap.md
