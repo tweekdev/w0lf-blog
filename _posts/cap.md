@@ -4,7 +4,7 @@ excerpt: Cap is an active machine during the time of writing this post. So, unle
   you are about to die, I suggest not to proceed. The machine is fairly simple with
   very few steps to get root access.
 coverImage: "/assets/blog/cap/cap.png"
-date: '"2021-09-12"'
+date: '2021-09-12'
 author:
   name: W0lf15
   picture: "/assets/blog/authors/w0lf15.png"
