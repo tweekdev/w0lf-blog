@@ -1,21 +1,20 @@
 ---
 title: Knife Machine HTB
-excerpt:
-  Knife is an easy difficulty Linux machine that features an application which
+excerpt: Knife is an easy difficulty Linux machine that features an application which
   is running on a backdoored version of PHP. This vulnerability is leveraged to obtain
   the foothold on the server. A sudo misconfiguration is then exploited to gain a
   root shell.
-coverImage: '/assets/blog/knife/knife.jpeg'
-date: 2021-08-16T05:35:07.322Z
+coverImage: "/assets/blog/knife/knife.jpeg"
+date: '"2021-09-12"'
 author:
   name: W0lf15
-  picture: '/assets/blog/authors/w0lf15.png'
+  picture: "/assets/blog/authors/w0lf15.png"
 ogImage:
-  url: '/assets/blog/knife/knife.jpeg'
+  url: "/assets/blog/knife/knife.jpeg"
 difficulty: easy
 active: false
----
 
+---
 ## Skills Required
 
 - Enumeration
