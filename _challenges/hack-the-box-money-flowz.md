@@ -6,7 +6,7 @@ active: true
 excerpt: "“Frank Vitalik is a hustler, can you figure out where the money flows?”\n"
 coverImage: ''
 author:
-  name: w0lf15
+  name: W0lf15
   picture: "/assets/blog/authors/w0lf15.png"
 ogImage:
   url: ''
