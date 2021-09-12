@@ -7,8 +7,8 @@ excerpt: Customers of secure-startup.com have been receiving some very convincin
   phishing emails, can you figure out why?
 coverImage: ''
 author:
-  name: ''
-  picture: ''
+  name: W0lf15
+  picture: "/assets/blog/authors/w0lf15.png"
 ogImage:
   url: ''
 
