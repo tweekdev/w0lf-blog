@@ -1,5 +1,5 @@
 ---
-date: '"2021-09-12"'
+date: '2021-09-12'
 title: 'Hack the Box: Money Flowz'
 difficulty: easy
 active: true
