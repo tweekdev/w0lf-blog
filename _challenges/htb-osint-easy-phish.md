@@ -1,5 +1,5 @@
 ---
-date: 2021-09-12T12:38:22Z
+date: '"2021-09-12"'
 title: HTB OSINT - Easy Phish
 difficulty: easy
 active: true
