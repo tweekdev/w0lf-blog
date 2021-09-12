@@ -5,7 +5,7 @@ excerpt: This is a write-up for an easy Linux box on hackthebox.eu named Blunder
   (CMS) to get the base user and then crack some passwords, which we get from the
   files in the web directory then we exploit a CVE to get root. Let’s get going.
 coverImage: "/assets/blog/blunder/blunder.jpg"
-date: '"2021-09-12"'
+date: '2021-09-12'
 author:
   name: W0lf15
   picture: "/assets/blog/authors/w0lf15.png"
