@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <section
             css={css`
-                height: 95vh;
+                height: 90vh;
                 margin: 1rem;
                 display: flex;
                 flex-direction: column;
@@ -131,16 +131,18 @@ const Intro = () => {
                 }}
             ></Particles>
             <h1
-                className={"text-3xl  lg:text-5xl xl:text-8xl	"}
+                className={"text-5xl  lg:text-5xl xl:text-8xl	"}
                 css={css`
                     font-weight: 900;
+                    color: #9fef00;
                 `}
             >
                 W0lf Blog.
             </h1>
+
             <div
                 css={css`
-                    margin-top: 5rem;
+                    margin-top: 3rem;
                     text-align: center;
                 `}
             >

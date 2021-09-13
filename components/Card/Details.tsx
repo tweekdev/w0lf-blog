@@ -37,7 +37,7 @@ export const Details: React.FC<{
                 style={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "cemter",
+                    justifyContent: "center",
                 }}
             >
                 <div>
